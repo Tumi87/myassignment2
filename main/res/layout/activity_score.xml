@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".ScoreActivity">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="289dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="71dp"
+        android:background="#9C27B0"
+        android:backgroundTint="#9C27B0"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#330000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scoreImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android:background=&quot;001A33&quot;"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/scoreImage"
+        android:layout_width="224dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="106dp"
+        android:contentDescription="@string/score_result_image"
+        app:layout_constraintBottom_toTopOf="@+id/reviewButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="158dp"
+        android:text="@string/surface_results"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

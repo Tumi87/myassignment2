@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LIFEHACKAPP</string>
+    <string name="surface_results">Surface Results</string>
+    <string name="score_result_image">score result image</string>
+    <string name="app_subtitle">DIVE INTO SEA WORD KNOWLEDGE</string>
+    <string name="begin">Begin</string>
+    <string name="ocean_tale_or_deep_truth">Ocean Tale or Deep Truth?</string>
+    <string name="dive_into_sea_world_knowledge">DIVE INTO SEA WORLD KNOWLEDGE!</string>
+    <string name="deep_true">Deep (True)</string>
+    <string name="tale_false">Tale (False)</string>
+    <string name="next_wave">Next Wave</string>
+</resources>

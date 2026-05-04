@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_8"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="115dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#FAF5F5"
+        android:textColorHighlight="#A91EC1"
+        android:textColorHint="#C01CDC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#331144"
+        app:layout_constraintBottom_toTopOf="@+id/hackButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hackButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="109dp"
+        android:text="@string/deep_true"
+        android:textColor="#F0ECF0"
+        app:layout_constraintBottom_toTopOf="@+id/mythButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionText"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/mythButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:text="@string/tale_false"
+        app:layout_constraintBottom_toTopOf="@+id/feedbackText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hackButton"
+        tools:ignore="VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="39dp"
+        android:background="#331144"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#EDE9E9"
+        android:textColorHighlight="#9C27B0"
+        android:textColorLink="#673AB7"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mythButton" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="89dp"
+        android:text="@string/next_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
